@@ -11,7 +11,13 @@ export const Hero = () => {
                         Je suis à la recherche d'opportunités en freelance ou en CDI pour collaborer sur des projets innovants, où je pourrais mettre à profit mes compétences techniques et ma rigueur acquise dans le domaine de l'ingénierie.
                          </p>
                     </div>
-                    <button className="btn w-full btn-accent font-anta text-2xl">Télécharger mon CV</button>
+                    <div className="flex gap-4">
+                        <button className="btn btn-primary text-1xl font-bold flex-1">Télécharger mon CV</button>
+                        <a href="#contact">
+                            <button className="btn btn-secondary text-1xl font-bold flex-2">Me contacter</button>
+                        </a>
+                        
+                    </div>
                 </div>
                 <div className="flex-1 flex justify-end w-full">
                     <img  

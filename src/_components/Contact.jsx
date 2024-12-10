@@ -2,7 +2,7 @@ export function Contact(){
     return(
         <>
         <form className="space-y-4 w-full mx-auto bg-base-200 p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4">Contactez-moi</h2>
+            <h2 className="text-2xl font-bold mb-4" id="contact" >Contactez-moi</h2>
             <p>Remplisser le formulaire ou envoyez moi un mail directement à "simongallien@orange.fr"</p>
 
             <div>

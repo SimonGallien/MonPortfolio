@@ -1,4 +1,4 @@
-export function ProjetCard() {
+export function ProjetCard({image, titre}) {
 return (
   <>
   {/* You can open the modal using document.getElementById('ID').showModal() method */}
@@ -6,13 +6,12 @@ return (
     <div className="card bg-base-100 w-96 shadow-xl">
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+              src={image}
+              alt="Projet" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
+              {titre}
             </h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-end">

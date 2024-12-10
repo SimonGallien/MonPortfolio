@@ -17,8 +17,8 @@ export function TimeLine(){
             </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-            <time className="font-mono italic">1984</time>
-            <div className="text-lg font-black">First Macintosh computer</div>
+            <time className="font-mono italic">2012 à 2013</time>
+            <div className="text-lg font-black">Classe préparatoire au grande école</div>
             The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
             personal computer. It played a pivotal role in establishing desktop publishing as a general
             office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
@@ -42,8 +42,8 @@ export function TimeLine(){
             </svg>
             </div>
             <div className="timeline-end mb-10">
-            <time className="font-mono italic">1998</time>
-            <div className="text-lg font-black">iMac</div>
+            <time className="font-mono italic">2013 à 2016</time>
+            <div className="text-lg font-black">Formation d'ingénieur à l'ESTIA</div>
             iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
             been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
             and has evolved through seven distinct forms
@@ -65,8 +65,8 @@ export function TimeLine(){
             </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-            <time className="font-mono italic">2001</time>
-            <div className="text-lg font-black">iPod</div>
+            <time className="font-mono italic">2013 à 2016</time>
+            <div className="text-lg font-black">Formation "Performance Engineering" à l'école de la performance (Nogaro)</div>
             The iPod is a discontinued series of portable media players and multi-purpose mobile devices
             designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
             8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
@@ -90,13 +90,12 @@ export function TimeLine(){
             </svg>
             </div>
             <div className="timeline-end mb-10">
-            <time className="font-mono italic">2007</time>
-            <div className="text-lg font-black">iPhone</div>
-            iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
-            operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
-            January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
-            of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
-            accounts for 15.6% of global smartphone market share
+            <time className="font-mono italic">2017 à 2024</time>
+            <div className="text-lg font-black">Team CMR</div>
+            <p>Pendant mes sept années chez CMR Team, j'ai eu l'opportunité de travailler sur des projets techniques variés, alliant mise au point de châssis, 
+            développement et conception. J'ai participé à des championnats prestigieux tels que le GT4 France et Europe, le GT3 Sprint et Endurance, l'Alpine Cup, 
+            le Trophée Andros, ainsi que la Lamborghini Super Trofeo. Ces expériences m'ont permis d'acquérir une expertise pointue et de m'impliquer pleinement 
+            dans des défis techniques et humains au sein d'une équipe passionnée par la recherche de performance et d'excellence.</p>
             </div>
             <hr />
         </li>
@@ -115,11 +114,12 @@ export function TimeLine(){
             </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-            <time className="font-mono italic">2015</time>
-            <div className="text-lg font-black">Apple Watch</div>
-            The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
-            tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
-            iOS and other Apple products and services
+            <time className="font-mono italic">2024</time>
+            <div className="text-lg font-black">Reconversion dans le développement web</div>
+            <p>Pendant mes sept années chez CMR Team, j'ai eu l'opportunité de travailler sur des projets techniques variés, alliant mise au point de châssis, 
+            développement et conception. J'ai participé à des championnats prestigieux tels que le GT4 France et Europe, le GT3 Sprint et Endurance, l'Alpine Cup, 
+            le Trophée Andros, ainsi que la Lamborghini Super Trofeo. Ces expériences m'ont permis d'acquérir une expertise pointue et de m'impliquer pleinement 
+            dans des défis techniques et humains au sein d'une équipe passionnée par la recherche de performance et d'excellence.</p>
             </div>
         </li>
         </ul>
