@@ -1,3 +1,4 @@
+import { Carousel } from "./_components/Carousel";
 import { Competences } from "./_components/Competences";
 import { Contact } from "./_components/Contact";
 import Footer from "./_components/Footer";
@@ -5,7 +6,6 @@ import Header from "./_components/Header";
 import { Hero } from "./_components/Hero";
 import { Projets } from "./_components/Projets";
 import { Spacing } from "./_components/Spacing";
-import { TimeLine } from "./_components/TimeLine";
 
 
 export default function App() {
@@ -19,10 +19,6 @@ export default function App() {
         <Projets />
         <Spacing size="md" />
         <Competences />
-        <Spacing size="md" />
-        <TimeLine />
-        <Spacing size="md" />
-        <Contact />
         <Spacing size="md" />
       </main>
       <Footer />
