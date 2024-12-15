@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Portfolio de Sophie Bluel - Architect d'intérieur",
+      "description": "Un portfolio moderne développé en Javascript, html et css. Ce portfolio d'architect d'intérieur possède une galerie d'image, un système d'authentification pour accéder à un mode édition qui permet de d'ajouter ou de supprimer des photos à la galerie",
+      "technologies": ["HTML", "CSS", "JAVASCRIPT"],
+      "mainImage": "SophieBluel.png",
+      "gallery": [
+        "../assets/images/SophieBluel.png",
+        "../assets/images/Sophie_Bluel_Logo.png",
+        "../assets/images/SophieBluel.png"
+      ],
+      "githubLink": "https://github.com/SimonGallien/OC_Projet_3"
+    },
+    {
+        "id": 2,
+        "title": "KASA - annonces immobilières",
+        "description": "Site de petites annonces immobilières développé en REACT et avec SASS. Le site inclue la gestion des erreurs de routage vers une page 404.",
+        "technologies": ["REACT", "SASS"],
+        "mainImage": "Kasa.png",
+        "gallery": [
+          "../assets/images/SophieBluel.png",
+          "../assets/images/Sophie_Bluel_Logo.png",
+          "../assets/images/SophieBluel.png"
+        ],
+        "githubLink": "https://github.com/SimonGallien/OC_Projet_5"
+      },
+      {
+        "id": 3,
+        "title": "Mon vieux grimoire - site de notation de livres",
+        "description": "J'ai développé la parti backend du site avec Node.js avec le framework Express et la base de donnée MongoDB. J'ai créer une API Rest avec des routes sécurisés.",
+        "technologies": ["NODE.JS", "EXPRESS.JS", "MongoDB"],
+        "mainImage": "VieuxGrimoire.png",
+        "gallery": [
+          "../assets/images/SophieBluel.png",
+          "../assets/images/Sophie_Bluel_Logo.png",
+          "../assets/images/SophieBluel.png"
+        ],
+        "githubLink": "https://github.com/SimonGallien/OC_Projet_6"
+      }
+  ]
+  

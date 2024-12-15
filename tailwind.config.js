@@ -4,7 +4,8 @@ import daisyui from "daisyui"
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/_components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {  

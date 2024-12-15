@@ -1,30 +1,19 @@
-import { Spacing } from "./Spacing";
+import competences from "../data/competences.json"
 
 export function Competences(){
     return (
         <>
-            <h2 className="text-2xl font-bold mb-4" id="competences">Mes compétences</h2>
-            <p className="text-5xl mb-4">J'aime travailler avec ...</p>
-            <div className="flex w-full flex-col lg:flex-row">
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">HTML</div>
-                <div className="divider lg:divider-horizontal" />
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">CSS</div>
-                <div className="divider lg:divider-horizontal" />
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">Javascript</div>
-            </div>
-            <div className="flex w-full flex-col lg:flex-row mt-10">
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">Sass</div>
-                <div className="divider lg:divider-horizontal" />
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">REACT</div>
-                <div className="divider lg:divider-horizontal" />
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">Tailwind</div>
-            </div>
-            <div className="flex w-full flex-col lg:flex-row mt-10">
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">MongoDB</div>
-                <div className="divider lg:divider-horizontal" />
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">Node.js</div>
-                <div className="divider lg:divider-horizontal" />
-                <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">Express</div>
+            <h2 className="text-2xl font-bold mb-4 animate-fade-in" id="competences">Mes compétences</h2>
+            <p className="text-5xl mb-12">J'aime travailler avec ...</p>
+            <div className="grid grid-cols-6 gap-8">
+                {competences.map((competence)=>(
+                    <div key={competence.id} className="competence">
+                        <div className="flex flex-col justify-center items-center">
+                            <img src={competence.icone} alt="icone competence" className="h-14"/>
+                            <div>{competence.competence}</div>
+                        </div>
+                    </div>
+                ))}
             </div>
         </>
     )
