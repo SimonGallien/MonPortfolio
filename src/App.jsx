@@ -1,27 +1,17 @@
-import { Competences } from "./_components/Competences";
-import Footer from "./_components/Footer";
-import Header from "./_components/Header";
-import { Hero } from "./_components/Hero";
-import { Projets } from "./_components/Projets";
-import { Spacing } from "./_components/Spacing";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Contact from "./pages/Contact";
 
-export default function App() {
+const App = () => {
   return (
-
-      <div className="min-h-screen">
-        <Header />
-        <Spacing size="md" />
-        <main className="max-w-screen-xl mx-auto">
-          <Hero />
-          <Spacing size="md" />
-          <Projets />
-          <Spacing size="md" />
-          <Competences />
-          <Spacing size="md" />
-        </main>
-        <Footer />
-      </div>
-  
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
-}
+};
+
+export default App;
 
