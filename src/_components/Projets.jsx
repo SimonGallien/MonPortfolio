@@ -1,10 +1,11 @@
 import projects from '../data/data.json';
+import { TitreH2 } from './TitreH2';
 
 export function Projets(){
     return (
         <>
         <div className="flex flex-col w-full place-content-between">
-            <h2 className="text-2xl font-bold mb-4" id="projets">Sélection de projets</h2>
+            <TitreH2 titre="Portfolio" id="projets"/>
 
             <div className="grid grid-cols-2 gap-12">
                 {projects.map((project) => (

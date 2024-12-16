@@ -1,3 +1,5 @@
+import { DownloadIcon } from "./icons/DownloadIcon"
+
 export const Hero = () => {
     return (
         <>
@@ -13,7 +15,10 @@ export const Hero = () => {
                             Actuellement en formation chez OpenClassrooms dans le cursus de "Développeur Web".<br/>
                             Je suis à la recherche d'opportunités en freelance ou en CDI pour collaborer sur des projets innovants, où je pourrais mettre à profit mes compétences techniques et ma rigueur acquise dans le domaine de l'ingénierie.
                         </p>
-                        <button className="btn btn-primary">Télécharger mon CV</button>
+                        <button className="btn btn-primary rounded-3xl">
+                            <DownloadIcon size={16} className="text-foreground"/>
+                            Télécharger mon CV
+                        </button>
                     </div>
                 </div>
             </div>
