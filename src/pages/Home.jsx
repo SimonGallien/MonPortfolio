@@ -20,8 +20,7 @@ export default function Home() {
           <Spacing size="md" />
         </main>
         <Footer />
-      </div>
-  
+        </div>
   );
 }
 

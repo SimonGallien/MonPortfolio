@@ -27,7 +27,7 @@ export default function Footer() {
 
       <div className="h-[1px] w-[1280px] border border-current rounded-full my-4"></div>
       <div className="w-[1280px] flex justify-between items-center">
-        <div>Développé avec REACT / TAILWIND / DAISYUI et hébergé sur Github</div>
+        <div className="flex items-center gap-2">Développé avec <img src="/src/assets/icones/vitejs.svg" className="size-5"/> /<img src="/src/assets/icones/react.svg" className="size-5"/> / <img src="/src/assets/icones/tailwindcss-icon.svg" className="size-5"/> / <img src="/src/assets/icones/daisyUI-icon.svg" className="size-5"/></div>
         <ul className="flex items-center gap-2">
             <a href="https://github.com/SimonGallien" className="btn btn-outline p-1 h-auto min-h-0 rounded-full">
                 <GithubIcon size={16} className="text-foreground"/>

@@ -3,7 +3,7 @@ import { DownloadIcon } from "./icons/DownloadIcon"
 export const Hero = () => {
     return (
         <>
-            <div className="hero">
+            <div className="hero bg-grid-fade">
                 <div className="hero-content flex-col justify-between lg:flex-row-reverse">
                     <div className="flex-1">
                         <h1 className="text-5xl font-bold font-anta">Simon GALLIEN</h1>
