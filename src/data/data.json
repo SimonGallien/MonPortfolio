@@ -37,6 +37,16 @@
           "../assets/images/SophieBluel.png"
         ],
         "githubLink": "https://github.com/SimonGallien/OC_Projet_6"
+      },
+      {
+        "id": 4,
+        "title": "Mon portfolio",
+        "description": "Développement de mon portfolio personnel.",
+        "technologies": ["REACT.JS", "TAILWIND", "DAISYUI", "EMAILJS", "VERCEL"],
+        "mainImage": "Portfolio.png",
+        "gallery": [
+        ],
+        "githubLink": "https://github.com/SimonGallien/OC_Projet_8"
       }
   ]
   

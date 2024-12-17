@@ -21,7 +21,7 @@ export default {
   daisyui: {
     themes: [
     "bumblebee",
-    "dim",
+    "night",
     ],
   },
 }

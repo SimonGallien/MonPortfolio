@@ -16,31 +16,16 @@
     },
     {
         "id" :4,
-        "competence": "REACT",
-         "icone":"/src/assets/icones/react.svg"
-    },
-    {
-        "id" :5,
         "competence": "SASS",
          "icone":"/src/assets/icones/sass.svg"
     },
     {
-        "id" :6,
-        "competence": "TAILWIND",
-         "icone":"/src/assets/icones/tailwindcss-icon.svg"
-    },
-    {
-        "id" :7,
-        "competence": "NODE.JS",
-         "icone":"/src/assets/icones/nodejs-icon.svg"
-    },
-    {
-        "id" :8,
+        "id" :5,
         "competence": "EXPRESS.JS",
          "icone":"/src/assets/icones/express.svg"
     },
     {
-        "id" :9,
+        "id" :6,
         "competence": "MONGODB",
          "icone":"/src/assets/icones/mongodb-icon.svg"
     }

@@ -29,7 +29,9 @@ const Formulaire = () => {
 
   return (
     <div className="w-[672px] mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Contactez-moi</h1>
+      <h1 className="text-5xl font-bold mb-4 text-accent">Contactez-moi</h1>
+      <p className="text-xl mb-7 text-justify">Que ce soit pour une question, une opportunité professionnelle ou un projet à concrétiser, je serais ravi d'échanger avec vous. 
+        N'hésitez pas à me contacter pour que nous discutions de votre idée ou de notre future collaboration.</p>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -37,7 +39,7 @@ const Formulaire = () => {
       >
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-bold mb-2">
-            Nom
+            Nom<span className="text-accent"> *</span>
           </label>
           <input
             type="text"
@@ -45,12 +47,12 @@ const Formulaire = () => {
             name="name"
             required
             placeholder="Votre nom"
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border border-current rounded bg-base-200 "
           />
         </div>
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-bold mb-2">
-            Email
+            Email<span className="text-accent"> *</span>
           </label>
           <input
             type="email"
@@ -58,19 +60,19 @@ const Formulaire = () => {
             name="email"
             required
             placeholder="Votre email"
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border border-current rounded bg-base-200"
           />
         </div>
         <div className="mb-4">
           <label htmlFor="message" className="block text-sm font-bold mb-2">
-            Message
+            Message<span className="text-accent"> *</span>
           </label>
           <textarea
             id="message"
             name="message"
             required
             placeholder="Votre message"
-            className="w-full px-3 py-2 border rounded"
+            className="w-full px-3 py-2 border border-current rounded bg-base-200"
             rows="4"
           ></textarea>
         </div>
