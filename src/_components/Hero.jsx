@@ -11,10 +11,10 @@ export const Hero = () => {
                         <p className="py-4 text-justify">
                             Je suis à la recherche d'opportunités en freelance ou en CDI pour collaborer sur des projets innovants, où je pourrais mettre à profit mes compétences techniques et ma rigueur acquise dans le domaine de l'ingénierie.
                         </p>
-                        <button className="btn btn-primary rounded-3xl">
+                        <a className="btn btn-primary rounded-3xl" href="/CV_Simon Gallien.pdf" download>
                             <DownloadIcon size={16} className="text-foreground"/>
                             Télécharger mon CV
-                        </button>
+                        </a>
                     </div>
                     <div className="flex-1 flex justify-center">
                         <img

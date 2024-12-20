@@ -18,10 +18,22 @@ export default function Footer() {
           <div id="contact" className="py-28 justify-start items-start w-[1280px]">
           <TitreH2 titre="Me contacter" id="contact"/>
           <p className="text-5xl mb-12">Ouvert aux nouvelles opportunités</p>
-          <Link to="/contact" className="btn btn-primary rounded-3xl">
-            Contactez-moi
-            <MailIcon size={24}/>
-          </Link>
+          <div className="flex justify-between ">
+            <div className="flex flex-col gap-12">
+              <p>
+                "Discutons ensemble de vos projets." <span className="block mb-2"></span>
+                Vous recherchez un développeur passionné et impliqué pour concrétiser vos idées ? <span className="block mb-2"></span>
+                Contactez-moi, je serais ravi de collaborer avec vous.
+              </p>
+              <Link to="/contact" className="btn btn-primary rounded-3xl w-64 flex items-center justify-center">
+                Contactez-moi
+                <MailIcon size={24}/>
+              </Link>
+            </div>
+
+            <img src="/src/assets/images/contact_2.png" className="rounded-3xl h-60  object-cover"/>
+          </div>
+  
         </div>
       )}
 
