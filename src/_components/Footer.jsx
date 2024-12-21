@@ -4,6 +4,7 @@ import { MailIcon } from "./icons/mailIcon";
 import { TitreH2 } from "./TitreH2";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { MailTelIcon } from "./MailTelIcon";
 
 export default function Footer() {
 
@@ -21,7 +22,7 @@ export default function Footer() {
           <div className="flex justify-between ">
             <div className="flex flex-col gap-12">
               <p>
-                "Discutons ensemble de vos projets." <span className="block mb-2"></span>
+              &ldquo;Discutons ensemble de vos projets.&ldquo; <span className="block mb-2"></span>
                 Vous recherchez un développeur passionné et impliqué pour concrétiser vos idées ? <span className="block mb-2"></span>
                 Contactez-moi, je serais ravi de collaborer avec vous.
               </p>
@@ -29,6 +30,8 @@ export default function Footer() {
                 Contactez-moi
                 <MailIcon size={24}/>
               </Link>
+              <MailTelIcon />
+              
             </div>
 
             <img src="/src/assets/images/contact_2.png" className="rounded-3xl h-60  object-cover"/>

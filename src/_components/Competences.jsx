@@ -6,7 +6,7 @@ export function Competences(){
         <>
         <div className="bg-grid-fade">
             <TitreH2 titre="Mes compétences" id="competences"/>
-            <p className="text-5xl mb-12">J'aime travailler avec ...</p>
+            <p className="text-5xl mb-12">J&lsquo;aime travailler avec ...</p>
             
                 <div className="flex justify-around items-center mb-12">
                     <div>
@@ -22,7 +22,7 @@ export function Competences(){
                         <div className="mt-2">NODE.JS</div>
                     </div>
                 </div>
-                <p className="text-3xl mb-12">Et d'autres...</p>
+                <p className="text-3xl mb-12">Et d&lsquo;autres...</p>
                 <div className="grid grid-cols-6 gap-8">
                     {competences.map((competence)=>(
                         <div key={competence.id} className="competence">
