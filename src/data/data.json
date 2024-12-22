@@ -11,13 +11,13 @@
       "Respecter les bonnes pratiques de structuration et d’organisation du code."
     ],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "mainImage": "/images/bluel/accueil_01.png",
+    "mainImage": "/images/bluel/accueil_01.webp",
     "gallery": [
-      "/images/bluel/accueil_01.png",
-      "/images/bluel/accueil_02.png",
-      "/images/bluel/modal_01.png",
-      "/images/bluel/modal_02.png",
-      "/images/bluel/login_01.png"
+      "/images/bluel/accueil_01.webp",
+      "/images/bluel/accueil_02.webp",
+      "/images/bluel/modal_01.webp",
+      "/images/bluel/modal_02.webp",
+      "/images/bluel/login_01.webp"
     ],
     "githubLink": "https://github.com/SimonGallien/OC_Projet_3"
   }
@@ -34,13 +34,13 @@
                      "Optimiser la mise en page pour qu'elle soit responsive et adaptée à tous les appareils, renforçant ainsi l'expérience utilisateur."
                     ],
         "technologies": ["REACT", "REACT ROUTER", "SASS"],
-        "mainImage": "/images/kasa/accueil_01.png",
+        "mainImage": "/images/kasa/accueil_01.webp",
         "gallery": [
-          "/images/kasa/accueil_01.png",
-          "/images/kasa/accueil_02.png",
-          "/images/kasa/propos_01.png",
-          "/images/kasa/logement_01.png",
-          "/images/kasa/404_01.png"
+          "/images/kasa/accueil_01.webp",
+          "/images/kasa/accueil_02.webp",
+          "/images/kasa/propos_01.webp",
+          "/images/kasa/logement_01.webp",
+          "/images/kasa/404_01.webp"
         ],
         "githubLink": "https://github.com/SimonGallien/OC_Projet_5"
       },
@@ -57,13 +57,13 @@
           "Optimiser les performances des requêtes et garantir la scalabilité de l'application."
         ],
         "technologies": ["Node.js", "Express.js", "MongoDB"],
-        "mainImage": "/images/livre/accueil_01.png",
+        "mainImage": "/images/livre/accueil_01.webp",
         "gallery": [
-          "/images/livre/accueil_01.png",
-          "/images/livre/ajout_01.png",
-          "/images/livre/detail_01.png",
-          "/images/livre/modif_01.png",
-          "/images/livre/publication_01.png"
+          "/images/livre/accueil_01.webp",
+          "/images/livre/ajout_01.webp",
+          "/images/livre/detail_01.webp",
+          "/images/livre/modif_01.webp",
+          "/images/livre/publication_01.webp"
         ],
         "githubLink": "https://github.com/SimonGallien/OC_Projet_6"
       }
@@ -81,13 +81,13 @@
           "Utiliser Tailwind CSS et DaisyUI pour assurer un design cohérent et maintenable."
         ],
         "technologies": ["React.js", "Tailwind", "DaisyUI", "EmailJS", "Vercel"],
-        "mainImage": "/images/portfolio/accueil.png",
+        "mainImage": "/images/portfolio/light.webp",
         "gallery": [
-          "/images/portfolio/accueil.png",
-          "/images/portfolio/competences.png",
-          "/images/portfolio/contact.png",
-          "/images/portfolio/detailProjet.png",
-          "/images/portfolio/light.png"
+          "/images/portfolio/accueil.webp",
+          "/images/portfolio/competences.webp",
+          "/images/portfolio/contact.webp",
+          "/images/portfolio/detailProjet.webp",
+          "/images/portfolio/light.webp"
         ],
         "githubLink": "https://github.com/SimonGallien/OC_Projet_8"
       }

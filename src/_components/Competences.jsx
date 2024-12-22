@@ -11,15 +11,15 @@ export function Competences(){
             
                 <div className="flex justify-around items-center mb-12">
                     <div>
-                        <img src="/src/assets/icones/react.svg" alt="icone competence" className="h-20"/>
+                        <img src="images/icones/react.svg" alt="icone competence" className="h-20"/>
                         <div className="mt-2 text-center">REACT.JS</div>
                     </div>
                     <div>
-                        <img src="/src/assets/icones/tailwindcss-icon.svg" alt="icone competence" className="h-20"/>
+                        <img src="images/icones/tailwindcss-icon.svg" alt="icone competence" className="h-20"/>
                         <div className="mt-2 text-center">TAILWIND</div>
                     </div>
                     <div>
-                        <img src="/src/assets/icones/nodejs-icon.svg" alt="icone competence" className="h-20"/>
+                        <img src="images/icones/nodejs-icon.svg" alt="icone competence" className="h-20"/>
                         <div className="mt-2 text-center">NODE.JS</div>
                     </div>
                 </div>

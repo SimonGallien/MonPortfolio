@@ -14,7 +14,7 @@ export default {
         telugu: ['Anek Telugu', 'sans-serif'],
       },
       backgroundImage: {
-      'grid-fade': "url('/src/assets/images/backgroundPattern.png')",
+      'grid-fade': "url('/images/backgroundPattern.webp')",
       },
     },
   },

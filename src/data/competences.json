@@ -2,26 +2,26 @@
     {
         "id" :1,
         "competence": "HTML",
-        "icone":"/src/assets/icones/html-5.svg"
+        "icone":"images/icones/html-5.svg"
     },
     {
         "id" :2,
         "competence": "CSS",
-        "icone":"/src/assets/icones/css-3.svg"
+        "icone":"images/icones/css-3.svg"
     },
     {
         "id" :3,
         "competence": "JAVASCRIPT",
-         "icone":"/src/assets/icones/javascript.svg"
+         "icone":"images/icones/javascript.svg"
     },
     {
         "id" :4,
         "competence": "SASS",
-         "icone":"/src/assets/icones/sass.svg"
+         "icone":"images/icones/sass.svg"
     },
     {
         "id" :5,
         "competence": "MONGODB",
-         "icone":"/src/assets/icones/mongodb-icon.svg"
+         "icone":"images/icones/mongodb-icon.svg"
     }
 ]

@@ -34,7 +34,7 @@ export default function Footer() {
               
             </div>
 
-            <img src="/src/assets/images/contact_2.png" className="rounded-3xl h-60  object-cover"/>
+            <img src="/images/contact_2.webp" className="rounded-3xl h-60  object-cover" alt="communicateur_starWars"/>
           </div>
   
         </div>
@@ -42,15 +42,15 @@ export default function Footer() {
 
       <div className="h-[1px] w-[1280px] border border-current rounded-full my-4"></div>
       <div className="w-[1280px] flex justify-between items-center">
-        <div className="flex items-center gap-2">Développé avec <img src="/src/assets/icones/vitejs.svg" className="size-5"/> /<img src="/src/assets/icones/react.svg" className="size-5"/> / <img src="/src/assets/icones/tailwindcss-icon.svg" className="size-5"/> / <img src="/src/assets/icones/daisyUI-icon.svg" className="size-5"/></div>
-        <ul className="flex items-center gap-2">
+        <div className="flex items-center gap-2">Développé avec <img src="/images/icones/vitejs.svg" className="size-5" alt="iconVite"/> /<img src="/images/icones/react.svg" className="size-5" alt="iconReact"/> / <img src="/images/icones/tailwindcss-icon.svg" className="size-5" alt="iconTailwind"/> / <img src="/images/icones/daisyUI-icon.svg" className="size-5" alt="/iconDaisyUI"/></div>
+        <div className="flex items-center gap-2">
             <a href="https://github.com/SimonGallien" className="btn btn-outline p-1 h-auto min-h-0 rounded-full">
                 <GithubIcon size={16} className="text-foreground"/>
             </a>
             <a href="https://www.linkedin.com/in/simongallien/" className="btn btn-outline p-1 h-auto min-h-0 rounded-full">
                 <LinkedinIcon size={16} className="text-foreground"/>
             </a>
-        </ul>
+        </div>
       </div>
 
     </footer>

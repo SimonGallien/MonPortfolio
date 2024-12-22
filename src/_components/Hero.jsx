@@ -18,8 +18,9 @@ export const Hero = () => {
                     </div>
                     <div className="flex-1 flex justify-center">
                         <img
-                            src="/profil.jpg" 
+                            src="/profil.webp" 
                             className="max-w-sm rounded-full shadow-2xl" 
+                            alt="profil"
                         />
                     </div>
 
