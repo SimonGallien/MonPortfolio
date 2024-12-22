@@ -3,12 +3,14 @@ import Home from "./Pages/Home";
 import Contact from "./pages/Contact";
 import Error from "./pages/404";
 import ProjetDetail from "./pages/ProjetDetail";
+import ScrollToTop from "./_components/ScrollToTop";
 
 
 const App = () => {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

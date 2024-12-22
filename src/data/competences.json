@@ -21,11 +21,6 @@
     },
     {
         "id" :5,
-        "competence": "EXPRESS.JS",
-         "icone":"/src/assets/icones/express.svg"
-    },
-    {
-        "id" :6,
         "competence": "MONGODB",
          "icone":"/src/assets/icones/mongodb-icon.svg"
     }

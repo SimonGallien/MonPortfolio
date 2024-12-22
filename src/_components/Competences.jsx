@@ -1,4 +1,5 @@
 import competences from "../data/competences.json"
+import { ExpressIcon } from "./icons/ExpressIcon"
 import { TitreH2 } from "./TitreH2"
 
 export function Competences(){
@@ -11,27 +12,31 @@ export function Competences(){
                 <div className="flex justify-around items-center mb-12">
                     <div>
                         <img src="/src/assets/icones/react.svg" alt="icone competence" className="h-20"/>
-                        <div className="mt-2">REACT.JS</div>
+                        <div className="mt-2 text-center">REACT.JS</div>
                     </div>
                     <div>
                         <img src="/src/assets/icones/tailwindcss-icon.svg" alt="icone competence" className="h-20"/>
-                        <div className="mt-2">TAILWIND</div>
+                        <div className="mt-2 text-center">TAILWIND</div>
                     </div>
                     <div>
                         <img src="/src/assets/icones/nodejs-icon.svg" alt="icone competence" className="h-20"/>
-                        <div className="mt-2">NODE.JS</div>
+                        <div className="mt-2 text-center">NODE.JS</div>
                     </div>
                 </div>
                 <p className="text-3xl mb-12">Et d&lsquo;autres...</p>
                 <div className="grid grid-cols-6 gap-8">
                     {competences.map((competence)=>(
                         <div key={competence.id} className="competence">
-                            <div className="flex flex-col justify-center items-center">
+                           <div className="flex flex-col justify-center items-center">
                                 <img src={competence.icone} alt="icone competence" className="h-14"/>
-                                <div className="mt-2">{competence.competence}</div>
+                                <div className="mt-2 text-center">{competence.competence}</div>
                             </div>
                         </div>
                     ))}
+                    <div className="flex flex-col justify-center items-center">
+                        <ExpressIcon className="h-14"/>
+                        <div className="mt-1">EXPRESS</div>
+                    </div>
                 </div>
             </div>
         </>
