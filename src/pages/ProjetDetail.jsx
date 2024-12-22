@@ -32,12 +32,14 @@ export default function ProjetDetail() {
                     </a>
                 </div>
                 <Carousel pictures={projet.gallery}/>
-                <h2 className="text-2xl my-7 text-accent">Description du projet</h2>
-                <p>{projet.description}</p>
-                <h2 className="text-2xl my-7 text-accent">Contexte du projet</h2>
-                <p>{projet.contexte}</p>
-                <h2 className="text-2xl my-7 text-accent">Objectifs</h2>
-                <p>{projet.objectifs}</p>
+                <h2 className="text-2xl mb-3 text-accent">Description du projet</h2>
+                <p className="text-justify">{projet.description}</p>
+                <h2 className="text-2xl mb-3 mt-7 text-accent">Contexte du projet</h2>
+                <p className="text-justify">{projet.contexte}</p>
+                <h2 className="text-2xl mb-3 mt-7 text-accent">Objectifs</h2>
+                <ul>{projet.objectifs.map((objectif, index)=>(
+                    <li key={index}>• {objectif}</li>
+                ))}</ul>
             </div>
             <Footer />
         </>

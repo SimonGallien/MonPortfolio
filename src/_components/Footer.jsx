@@ -11,11 +11,11 @@ export default function Footer() {
   const location = useLocation();
 
   // Vérifie si l'utilisateur est sur la page de contact
-  const isContactPage = location.pathname === "/contact";
+  const isContactPage = location.pathname === "/";
 
   return (
     <footer className="flex flex-col items-center justify-center p-4 bg-base-200">
-      {!isContactPage && (
+      {isContactPage && (
           <div id="contact" className="py-28 justify-start items-start w-[1280px]">
           <TitreH2 titre="Me contacter" id="contact"/>
           <p className="text-5xl mb-12">Ouvert aux nouvelles opportunités</p>

@@ -19,11 +19,11 @@ function Carousel({ pictures }) {
     <div className="carousel w-full flex justify-center mb-12">
       {pictures.map((slide, index) => 
         index === currentIndex && (
-          <div key={index} id="slide1" className="carousel-item relative w-2/3 h-[400px]">
+          <div key={index} id="slide1" className="carousel-item relative w-2/3">
             <img
                 src={slide}
                 alt={`slide ${index + 1}`}
-                className="w-full object-cover h-full"
+                className="w-full object-cover h-full rounded-xl"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
               <span onClick={prevSlide} className="btn btn-circle">❮</span>

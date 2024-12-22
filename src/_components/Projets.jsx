@@ -8,7 +8,7 @@ export function Projets({ project }){
                 <div className="card bg-neutral w-full shadow-xl h-full">
                     <figure>
                         <img
-                        src={`/src/assets/images/${project.mainImage}`}
+                        src={project.mainImage}
                         alt={project.title}
                         className='h-60 object-cover w-full' />
                     </figure>

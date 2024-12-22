@@ -1,63 +1,96 @@
 [
-    {
-      "id": 1,
-      "title": "Portfolio de Sophie Bluel - Architect d'intérieur",
-      "description": "Un portfolio moderne développé en Javascript, html et css. Ce portfolio d'architect d'intérieur possède une galerie d'image, un système d'authentification pour accéder à un mode édition qui permet de d'ajouter ou de supprimer des photos à la galerie",
-      "contexte":"Projet réalisé dans le cadre du parcours Développeur Web OpenClassrooms. L’objectif était de concevoir un portfolio dynamique avec gestion des médias et authentification.",
-      "objectifs":"• Découvrir la manipulation du DOM pour la galerie\n• Mettre en place un système d’authentification (login, logout)\n• Gérer l’édition et la suppression de contenus via JavaScript\n• Respecter les bonnes pratiques d’architecture de code",
-      "technologies": ["HTML", "CSS", "JAVASCRIPT"],
-      "mainImage": "SophieBluel.png",
-      "gallery": [
-        "/images/SophieBluel.png",
-        "/images/Sophie_Bluel_Logo.png",
-        "/images/SophieBluel.png"
-      ],
-      "githubLink": "https://github.com/SimonGallien/OC_Projet_3"
-    },
+  {
+    "id": 1,
+    "title": "Portfolio de Sophie Bluel - Architecte d'intérieur",
+    "description": "Un portfolio moderne et interactif développé en JavaScript, HTML, et CSS. Ce site présente les réalisations d'une architecte d'intérieur à travers une galerie d'images dynamique. Il inclut un système d'authentification permettant d'accéder à un mode édition pour ajouter ou supprimer des photos de la galerie.",
+    "contexte": "Projet réalisé dans le cadre du parcours Développeur Web OpenClassrooms. Ce projet visait à créer un portfolio dynamique et personnalisable pour un client fictif, tout en mettant en œuvre des concepts fondamentaux du développement web tels que la manipulation du DOM et la gestion de l'authentification.",
+    "objectifs": [
+      "Apprendre et mettre en œuvre la manipulation du DOM pour la gestion de la galerie d'images.",
+      "Développer un système d’authentification sécurisé (connexion, déconnexion).",
+      "Implémenter l’ajout, la modification, et la suppression de contenus via JavaScript.",
+      "Respecter les bonnes pratiques de structuration et d’organisation du code."
+    ],
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "mainImage": "/images/bluel/accueil_01.png",
+    "gallery": [
+      "/images/bluel/accueil_01.png",
+      "/images/bluel/accueil_02.png",
+      "/images/bluel/modal_01.png",
+      "/images/bluel/modal_02.png",
+      "/images/bluel/login_01.png"
+    ],
+    "githubLink": "https://github.com/SimonGallien/OC_Projet_3"
+  }
+  ,
     {
         "id": 2,
         "title": "KASA - annonces immobilières",
-        "description": "Site de petites annonces immobilières développé en REACT et avec SASS. Le site inclue la gestion des erreurs de routage vers une page 404.",
-        "contexte":"",
-        "objectifs":"",
-        "technologies": ["REACT", "SASS"],
-        "mainImage": "Kasa.png",
+        "description": "Site de petites annonces immobilières développé avec React pour une interface utilisateur réactive et intuitive, et SASS pour un style modulaire et maintenable. Le site inclut des fonctionnalités essentielles comme la gestion des erreurs de routage redirigeant vers une page 404 personnalisée, offrant une expérience utilisateur robuste et professionnelle.",
+        "contexte":"Ce projet a été réalisé dans le cadre de ma formation en développement web sur OpenClassrooms. L'objectif était de concevoir un site de petites annonces immobilières performant, avec une gestion dynamique des données et une mise en page responsive. Le projet m'a permis de consolider mes compétences en React pour la construction d'une interface utilisateur interactive, ainsi qu'en SASS pour structurer et optimiser le CSS, tout en appliquant des bonnes pratiques en matière d'accessibilité et de gestion des erreurs.",
+        "objectifs":["Développer un site web fonctionnel et esthétique pour des annonces immobilières, capable de gérer dynamiquement les données des logements.",
+                     "Implémenter une gestion des erreurs pour rediriger l'utilisateur vers une page 404 en cas de routage incorrect.",
+                     "Appliquer des concepts avancés de React comme la gestion des composants, les props, et le state pour une expérience utilisateur fluide.",
+                     "Utiliser SASS pour créer une architecture CSS modulable, facilitant la maintenance et l'évolutivité du projet.",
+                     "Optimiser la mise en page pour qu'elle soit responsive et adaptée à tous les appareils, renforçant ainsi l'expérience utilisateur."
+                    ],
+        "technologies": ["REACT", "REACT ROUTER", "SASS"],
+        "mainImage": "/images/kasa/accueil_01.png",
         "gallery": [
-          "/images/SophieBluel.png",
-          "/images/Sophie_Bluel_Logo.png",
-          "/images/SophieBluel.png"
+          "/images/kasa/accueil_01.png",
+          "/images/kasa/accueil_02.png",
+          "/images/kasa/propos_01.png",
+          "/images/kasa/logement_01.png",
+          "/images/kasa/404_01.png"
         ],
         "githubLink": "https://github.com/SimonGallien/OC_Projet_5"
       },
       {
         "id": 3,
-        "title": "Mon vieux grimoire - site de notation de livres",
-        "description": "J'ai développé la parti backend du site avec Node.js avec le framework Express et la base de donnée MongoDB. J'ai créer une API Rest avec des routes sécurisés.",
-        "contexte":"",
-        "objectifs":"",
-        "technologies": ["NODE.JS", "EXPRESS.JS", "MongoDB"],
-        "mainImage": "VieuxGrimoire.png",
+        "title": "Mon vieux grimoire - Site de notation de livres",
+        "description": "Développement de la partie backend du site avec Node.js, en utilisant le framework Express et la base de données MongoDB. J'ai créé une API REST avec des routes sécurisées, permettant aux utilisateurs d'ajouter, modifier, supprimer et noter des livres. L'accent a été mis sur la sécurité des données et le respect des bonnes pratiques en matière de développement backend.",
+        "contexte": "Ce projet a été réalisé dans le cadre de ma formation OpenClassrooms pour apprendre et maîtriser le développement backend. Le site 'Mon vieux grimoire' propose une plateforme permettant aux utilisateurs de gérer une collection de livres avec des fonctionnalités comme l'ajout, la modification, et la notation. Ce projet m'a permis d'approfondir mes connaissances en Node.js, Express.js, et MongoDB, tout en mettant en place une architecture sécurisée et performante.",
+        "objectifs": [
+          "Concevoir une API REST performante et sécurisée avec Node.js et Express.",
+          "Implémenter une base de données MongoDB pour gérer les livres et leurs notations.",
+          "Créer des routes sécurisées avec des contrôles d'accès pour protéger les données utilisateur.",
+          "Respecter les bonnes pratiques de développement backend, y compris la validation des données et la gestion des erreurs.",
+          "Optimiser les performances des requêtes et garantir la scalabilité de l'application."
+        ],
+        "technologies": ["Node.js", "Express.js", "MongoDB"],
+        "mainImage": "/images/livre/accueil_01.png",
         "gallery": [
-          "/images/SophieBluel.png",
-          "/images/Sophie_Bluel_Logo.png",
-          "/images/SophieBluel.png"
+          "/images/livre/accueil_01.png",
+          "/images/livre/ajout_01.png",
+          "/images/livre/detail_01.png",
+          "/images/livre/modif_01.png",
+          "/images/livre/publication_01.png"
         ],
         "githubLink": "https://github.com/SimonGallien/OC_Projet_6"
-      },
+      }
+      ,
       {
         "id": 4,
         "title": "Mon portfolio",
-        "description": "Développement de mon portfolio personnel.",
-        "contexte":"",
-        "objectifs":"",
-        "technologies": ["REACT.JS", "TAILWIND", "DAISYUI", "EMAILJS", "VERCEL"],
-        "mainImage": "Portfolio.png",
+        "description": "Création de mon portfolio personnel pour présenter mes projets et compétences en développement web. Le portfolio a été développé avec React.js pour une interface réactive, Tailwind CSS et DaisyUI pour un design moderne et cohérent, et EmailJS pour la gestion du formulaire de contact. Hébergé sur Vercel, ce projet met en avant mes réalisations et permet de me contacter directement via un formulaire sécurisé.",
+        "contexte": "Ce projet a été réalisé dans le cadre de ma formation en développement web chez OpenClassrooms, en tant que projet final. L'objectif était de concevoir un portfolio professionnel pour présenter mes compétences techniques, mes réalisations, et ma créativité à travers une interface moderne et intuitive. Ce projet m'a permis de renforcer mes connaissances en React.js, Tailwind CSS, et dans l'intégration de services externes comme EmailJS.",
+        "objectifs": [
+          "Concevoir une interface utilisateur moderne et responsive pour présenter mes projets.",
+          "Mettre en œuvre un formulaire de contact fonctionnel et sécurisé en utilisant EmailJS.",
+          "Héberger le portfolio sur une plateforme fiable comme Vercel pour garantir une disponibilité optimale.",
+          "Optimiser l'expérience utilisateur avec une navigation fluide et des animations légères.",
+          "Utiliser Tailwind CSS et DaisyUI pour assurer un design cohérent et maintenable."
+        ],
+        "technologies": ["React.js", "Tailwind", "DaisyUI", "EmailJS", "Vercel"],
+        "mainImage": "/images/portfolio/accueil.png",
         "gallery": [
-          "/images/SophieBluel.png",
-          "/images/Sophie_Bluel_Logo.png",
-          "/images/SophieBluel.png"
+          "/images/portfolio/accueil.png",
+          "/images/portfolio/competences.png",
+          "/images/portfolio/contact.png",
+          "/images/portfolio/detailProjet.png",
+          "/images/portfolio/light.png"
         ],
         "githubLink": "https://github.com/SimonGallien/OC_Projet_8"
       }
+      
   ]
   
