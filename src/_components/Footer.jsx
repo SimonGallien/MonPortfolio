@@ -1,6 +1,6 @@
 import { GithubIcon } from "./icons/GithubIcon";
 import { LinkedinIcon } from "./icons/LinkedinIcon";
-import { MailIcon } from "./icons/mailIcon";
+import { MailIcon } from "./icons/MailIcon";
 import { TitreH2 } from "./TitreH2";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
