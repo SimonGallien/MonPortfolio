@@ -7,6 +7,40 @@ const Formulaire = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const name = form.current.name.value.trim();
+    const email = form.current.email.value.trim();
+    const message = form.current.message.value.trim();
+
+    const lastSubmit = localStorage.getItem("lastSubmit");
+    const now = Date.now();
+
+    if (lastSubmit && now - lastSubmit < 30000) { // 30 secondes
+      alert("Veuillez attendre avant de soumettre à nouveau.");
+      return;
+    }
+
+    localStorage.setItem("lastSubmit", now);
+
+    if (!name || !email || !message) {
+      alert("Tous les champs sont obligatoires !");
+      return;
+    }
+
+    if (!/^[a-zA-Z\s]+$/.test(name)) {
+      alert("Le nom contient des caractères non valides !");
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert("Adresse email invalide !");
+      return;
+    }
+
+    if (message.length > 1000) {
+      alert("Le message est trop long !");
+      return;
+    }
+
     emailjs
     .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -30,8 +64,8 @@ const Formulaire = () => {
   return (
     <div className="w-[672px] mx-auto">
       <h1 className="text-5xl font-bold mb-4 text-accent">Contactez-moi</h1>
-      <p className="text-xl mb-7 text-justify">Que ce soit pour une question, une opportunité professionnelle ou un projet à concrétiser, je serais ravi d'échanger avec vous. 
-        N'hésitez pas à me contacter pour que nous discutions de votre idée ou de notre future collaboration.</p>
+      <p className="text-xl mb-7 text-justify">Que ce soit pour une question, une opportunité professionnelle ou un projet à concrétiser, je serais ravi d&lsquo;échanger avec vous. 
+        N&lsquo;hésitez pas à me contacter pour que nous discutions de votre idée ou de notre future collaboration.</p>
       <form
         ref={form}
         onSubmit={sendEmail}
