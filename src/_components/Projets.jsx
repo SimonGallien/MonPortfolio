@@ -18,14 +18,14 @@ export function Projets({ project }){
         {/* Contenu toujours visible */}
         <div
             tabIndex={0}
-            className="card-body absolute bg-info-content w-full bg-opacity-90 bottom-0 p-1"
+            className="card-body absolute bg-info-content w-full bg-opacity-80 bottom-0 p-1"
         >
-            <h2 className="block card-title text-center">{project.title}</h2>
-            <div className="flex flex-wrap gap-1 justify-center">
+            <h2 className="block card-title text-center pt-4">{project.title}</h2>
+            <div className="flex flex-wrap gap-4 justify-center py-4">
                 {project.technologies.map((tech, index) => (
                     <div
                         key={index}
-                        className="badge badge-base-content badge-outline"
+                        className="badge badge-base-content badge-outline p-4"
                     >
                         {tech}
                     </div>
