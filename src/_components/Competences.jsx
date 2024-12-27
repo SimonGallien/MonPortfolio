@@ -1,5 +1,4 @@
 import competences from "../data/competences.json"
-import { ExpressIcon } from "./icons/ExpressIcon"
 import { TitreH2 } from "./TitreH2"
 
 export function Competences(){
@@ -24,7 +23,7 @@ export function Competences(){
                     </div>
                 </div>
                 <p className="text-3xl mb-12">Et d&lsquo;autres...</p>
-                <div className="grid grid-cols-6 gap-8">
+                <div className="grid grid-cols-3 gap-4">
                     {competences.map((competence)=>(
                         <div key={competence.id} className="competence">
                            <div className="flex flex-col justify-center items-center">
@@ -34,7 +33,7 @@ export function Competences(){
                         </div>
                     ))}
                     <div className="flex flex-col justify-center items-center">
-                        <ExpressIcon className="h-14"/>
+                      
                         <div className="mt-1">EXPRESS</div>
                     </div>
                 </div>

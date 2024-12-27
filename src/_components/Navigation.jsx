@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Navigation() {
     return (
-        <ul className="menu menu-vertical lg:menu-horizontal rounded-box">
-        <li><Link to={"/"}>Accueil</Link></li>
-        <li><Link to={"/contact"}>Contact</Link></li>
+        <ul className="menu menu-horizontal gap-7 rounded-box p-0">
+        <li><Link className="p-0" to={"/"}>Accueil</Link></li>
+        <li><Link className="p-0" to={"/contact"}>Contact</Link></li>
     </ul>
     )
 }

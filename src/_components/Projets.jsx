@@ -5,7 +5,7 @@ export function Projets({ project }){
     return (
         <>
 <Link to={`/projets/${project.id}`}>
-    <div className="card bg-neutral w-full shadow-xl h-96 relative group">
+    <article className="card bg-neutral w-full shadow-xl h-96 relative group">
         {/* Image principale */}
         <figure className="h-full relative">
             <img
@@ -39,7 +39,7 @@ export function Projets({ project }){
         >
             En savoir plus
         </div>
-    </div>
+    </article>
 </Link>
 
         </>
