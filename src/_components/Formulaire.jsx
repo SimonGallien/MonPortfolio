@@ -63,8 +63,8 @@ const Formulaire = () => {
 
   return (
     <div className="w-[672px] mx-auto">
-      <h1 className="text-5xl font-bold mb-4 text-accent">Contactez-moi</h1>
-      <p className="text-xl mb-7 text-justify">Que ce soit pour une question, une opportunité professionnelle ou un projet à concrétiser, je serais ravi d&lsquo;échanger avec vous. 
+      <h1 className="text-4xl md:text-5xl font-bold mb-1 md:mb-4 text-accent">Contactez-moi</h1>
+      <p className="text-base md:text-xl mb-1 md:mb-7 text-justify">Que ce soit pour une question, une opportunité professionnelle ou un projet à concrétiser, je serais ravi d&lsquo;échanger avec vous. 
         N&lsquo;hésitez pas à me contacter pour que nous discutions de votre idée ou de notre future collaboration.</p>
       <form
         ref={form}

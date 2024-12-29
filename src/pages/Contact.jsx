@@ -6,7 +6,7 @@ import Formulaire from "../_components/Formulaire";
 const Contact = () => {
   return (
     <>
-        <div className="flex flex-col min-h-screen bg-base-200">
+        <div className="flex flex-col min-h-screen bg-base-200  m-auto p-3 md:px-12">
             <Header />
 
             {/* Contenu principal */}

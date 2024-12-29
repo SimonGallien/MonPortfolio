@@ -16,9 +16,9 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-center justify-center">
       {isContactPage && (
-          <div id="contact" className="py-28 justify-start items-start w-full">
+          <div id="contact" className="lg:pb-16 justify-start items-start w-full">
             <TitreH2 titre="Me contacter" id="contact"/>
-            <p className="text-5xl mb-12">Ouvert aux nouvelles opportunités</p>
+            <p className="text-3xl md:text-5xl mb-12">Ouvert aux nouvelles opportunités</p>
             <div className="flex justify-between w-full">
               <div className="flex flex-col gap-12">
                 <p>

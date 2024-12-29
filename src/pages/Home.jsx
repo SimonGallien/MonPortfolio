@@ -10,16 +10,16 @@ import { TitreH2 } from "../_components/TitreH2";
 export default function Home() {
   return (
       <>
-        <div className="min-h-screen max-w-[1280px] w-full m-auto p-3">
+        <div className="min-h-screen max-w-[1280px] w-full m-auto p-3 md:px-12">
           <Header />
           <Spacing size="md" />
           <main className="max-w-screen-xl mx-auto">
             <Hero />
             <Spacing size="md" />
             <TitreH2 titre="Portfolio" id="projets"/>
-            <p className="text-5xl mb-12">Sélection de projets</p>
+            <p className="text-3xl md:text-5xl mb-12">Sélection de projets</p>
             <div className="flex flex-col w-full place-content-between">
-              <section className="grid grid-cols-1 gap-12">
+              <section className="grid grid-cols-1 gap-12 lg:grid-cols-2">
                 {projects.map((project)=>(
                   <Projets key={project.id} project={project}/>
                 ))}
