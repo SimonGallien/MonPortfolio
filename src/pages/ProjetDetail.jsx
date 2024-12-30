@@ -17,9 +17,10 @@ export default function ProjetDetail() {
 
     return (
         <>
+        <div className="min-h-screen max-w-[1280px] w-full m-auto p-3 md:px-12">
             <Header />
-            <div key={projet.id} className="w-[1280px] m-auto mb-28">
-                <h1 className="text-5xl text-accent w-full text-center mt-12 mb-8">{projet.title}</h1>
+            <div key={projet.id} className="mb-28 w-full">
+                <h1 className="text-2xl lg:text-4xl xl:text-5xl text-accent w-full text-center mt-12 mb-8">{projet.title}</h1>
                 <div className="flex justify-center w-full mb-4">
                     {projet.technologies.map((tech, index) => (
                         <div key={index} className="badge badge-primary badge-outline mx-1">{tech}</div>
@@ -32,16 +33,17 @@ export default function ProjetDetail() {
                     </a>
                 </div>
                 <Carousel pictures={projet.gallery}/>
-                <h2 className="text-2xl mb-3 text-accent">Description du projet</h2>
+                <h2 className="text-xl lg:text-2xl mb-3 text-accent">Description du projet</h2>
                 <p className="text-justify">{projet.description}</p>
-                <h2 className="text-2xl mb-3 mt-7 text-accent">Contexte du projet</h2>
+                <h2 className="text-xl lg:text-2xl mb-3 mt-7 text-accent">Contexte du projet</h2>
                 <p className="text-justify">{projet.contexte}</p>
-                <h2 className="text-2xl mb-3 mt-7 text-accent">Objectifs</h2>
+                <h2 className="text-xl lg:text-2xl mb-3 mt-7 text-accent">Objectifs</h2>
                 <ul>{projet.objectifs.map((objectif, index)=>(
                     <li key={index}>• {objectif}</li>
                 ))}</ul>
             </div>
             <Footer />
+            </div>
         </>
     )
 }

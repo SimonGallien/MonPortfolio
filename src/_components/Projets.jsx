@@ -18,7 +18,7 @@ export function Projets({ project }){
         {/* Contenu toujours visible */}
         <div
             tabIndex={0}
-            className="card-body absolute bg-info-content w-full bg-opacity-80 bottom-0 p-1"
+            className="card-body absolute bg-info-content w-full bg-opacity-80 bottom-0 p-1 text-neutral-content"
         >
             <h2 className="block card-title text-center pt-4">{project.title}</h2>
             <div className="flex flex-wrap gap-4 justify-center py-4">
@@ -35,7 +35,7 @@ export function Projets({ project }){
 
         {/* Contenu affiché au hover */}
         <div
-            className="h-full w-full bg-black bg-opacity-70 absolute top-0 left-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 font-bold text-lg"
+            className="h-full w-full bg-black bg-opacity-70 absolute top-0 left-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 font-bold text-neutral-content text-lg rounded-xl"
         >
             En savoir plus
         </div>
