@@ -50,12 +50,7 @@ Projets.propTypes = {
     project: PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
-      description: PropTypes.string,
-      contexte: PropTypes.string,
-      objectifs: PropTypes.string,
       technologies: PropTypes.arrayOf(PropTypes.string),
       mainImage: PropTypes.string,
-      gallery: PropTypes.arrayOf(PropTypes.string),
-      githubLink: PropTypes.string
     }).isRequired
   };

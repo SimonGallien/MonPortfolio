@@ -1,8 +1,10 @@
 import emailjs from "emailjs-com";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import validator from 'validator'
 
 const Formulaire = () => {
+
+  const form = useRef(); // Référence pour le formulaire
 
   const [name, setName] = useState("")
   const [nameError, setNameError] = useState(false)
@@ -69,6 +71,7 @@ const Formulaire = () => {
     .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current, // Utilisation de la référence au formulaire
         import.meta.env.VITE_EMAILJS_USER_ID
       )
       
@@ -90,6 +93,7 @@ const Formulaire = () => {
       <p className="text-base md:text-xl mb-1 md:mb-7 text-justify">Que ce soit pour une question, une opportunité professionnelle ou un projet à concrétiser, je serais ravi d&lsquo;échanger avec vous. 
         N&lsquo;hésitez pas à me contacter pour que nous discutions de votre idée ou de notre future collaboration.</p>
       <form
+        ref={form}
         onSubmit={sendEmail}
         className="rounded"
       >
