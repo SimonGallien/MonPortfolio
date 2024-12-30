@@ -20,12 +20,12 @@ export function Projets({ project }){
             tabIndex={0}
             className="card-body absolute bg-info-content w-full bg-opacity-80 bottom-0 p-1 text-neutral-content"
         >
-            <h2 className="block card-title text-center pt-4">{project.title}</h2>
-            <div className="flex flex-wrap gap-4 justify-center py-4">
+            <h2 className="text-base sm:text-xl block card-title text-center pt-2 lg:pt-3">{project.title}</h2>
+            <div className="flex flex-wrap gap-4 justify-center py-1 md:py-2 lg:py-3">
                 {project.technologies.map((tech, index) => (
                     <div
                         key={index}
-                        className="badge badge-base-content badge-outline p-4"
+                        className="badge badge-base-content badge-outline p-3 lg:p-3"
                     >
                         {tech}
                     </div>
