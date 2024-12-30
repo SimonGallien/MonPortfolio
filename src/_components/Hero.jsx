@@ -16,11 +16,11 @@ export const Hero = () => {
                             Télécharger mon CV
                         </a>
                     </div>
-                    <div className="pt-6 flex-1 md:mx-0 flex justify-center">
+                    <div className="aspect-w-1 aspect-h-1 w-full max-w-sm">
                         <img
-                            src="/profil.webp" 
-                            className="max-w-sm rounded-full shadow-2xl w-full" 
-                            alt="profil"
+                            src="/profil.webp"
+                            className="rounded-full shadow-2xl object-cover"
+                            alt="Simon Gallien, profil"
                         />
                     </div>
 
