@@ -88,10 +88,8 @@ const Formulaire = () => {
   };
 
   return (
-    <div className="w-[672px] mx-auto">
-      <h1 className="text-4xl md:text-5xl font-bold mb-1 md:mb-4 text-accent">Contactez-moi</h1>
-      <p className="text-base md:text-xl mb-1 md:mb-7 text-justify">Que ce soit pour une question, une opportunité professionnelle ou un projet à concrétiser, je serais ravi d&lsquo;échanger avec vous. 
-        N&lsquo;hésitez pas à me contacter pour que nous discutions de votre idée ou de notre future collaboration.</p>
+    <div className="flex flex-col h-full w-full justify-around">
+      
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -137,7 +135,7 @@ const Formulaire = () => {
             required
             placeholder="Votre message"
             className="w-full px-3 py-2 border border-current rounded bg-base-100"
-            rows="4"
+            rows="7"
             value={message}
             onChange={handleMessageChange}
           ></textarea>

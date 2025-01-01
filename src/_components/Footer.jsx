@@ -10,11 +10,10 @@ export default function Footer() {
 
   const location = useLocation();
 
-  // Vérifie si l'utilisateur est sur la page de contact
   const isContactPage = location.pathname === "/";
 
   return (
-    <footer className="flex flex-col items-center justify-center">
+    <footer className="flex flex-col max-w-[1280px] w-full m-auto items-center justify-between mb-4">
       {isContactPage && (
           <div id="contact" className="lg:pb-16 justify-start items-start w-full">
             <TitreH2 titre="Me contacter" id="contact"/>

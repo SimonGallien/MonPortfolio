@@ -1,6 +1,4 @@
 import Carousel from "../_components/Carousel";
-import Footer from "../_components/Footer";
-import Header from "../_components/Header";
 import { GithubIcon } from "../_components/icons/GithubIcon";
 import projets from "../data/data.json"
 import { Navigate, useParams } from 'react-router-dom';
@@ -18,7 +16,6 @@ export default function ProjetDetail() {
     return (
         <>
         <div className="min-h-screen max-w-[1280px] w-full m-auto p-3 md:px-12">
-            <Header />
             <div key={projet.id} className="mb-28 w-full">
                 <h1 className="text-2xl lg:text-4xl xl:text-5xl text-accent w-full text-center mt-12 mb-8">{projet.title}</h1>
                 <div className="flex justify-center w-full mb-4">
@@ -42,8 +39,7 @@ export default function ProjetDetail() {
                     <li key={index}>• {objectif}</li>
                 ))}</ul>
             </div>
-            <Footer />
-            </div>
+        </div>
         </>
     )
 }
