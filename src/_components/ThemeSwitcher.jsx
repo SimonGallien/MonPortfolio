@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const themes = ["bumblebee", "night"]; // Déclare les deux thèmes ici
 
 export default function ThemeController() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || themes[0]);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || themes[1]);
 
   // Applique le thème et le sauvegarde dans localStorage
   useEffect(() => {
