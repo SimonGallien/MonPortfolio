@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/portfolio-image:latest .
+          docker build -t ghcr.io/simongallien/monportfolio/portfolio-image:latest .
 
       - name: Push Docker image to GHCR
         run: docker push ghcr.io/${{ github.repository }}/portfolio-image:latest
