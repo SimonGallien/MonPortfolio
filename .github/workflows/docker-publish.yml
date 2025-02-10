@@ -36,6 +36,7 @@ jobs:
         #
       - name: Push image
         run: |
+<<<<<<< HEAD
           IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
 
           # This changes all uppercase characters to lowercase.
@@ -50,3 +51,9 @@ jobs:
           echo VERSION=$VERSION
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
+=======
+          docker build -t ghcr.io/simongallien/monportfolio/portfolio-image:latest .
+
+      - name: Push Docker image to GHCR
+        run: docker push ghcr.io/simongallien/monportfolio/portfolio-image:latest
+>>>>>>> 6e95f6a733b12241ff6e213f054f0a4b7c19a4d1
