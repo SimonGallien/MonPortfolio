@@ -15,7 +15,7 @@ on:
   pull_request:
   # This creates an environment variable called `IMAGE_NAME ` with the value `ghtoken_product_demo`.
 env:
-  IMAGE_NAME: ghtoken_product_demo
+  IMAGE_NAME: my-image-name:$(date +%s)
 #
 jobs:
   # This pushes the image to GitHub Packages.
@@ -50,3 +50,17 @@ jobs:
           echo VERSION=$VERSION
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
+
+      - name: Update Kubernetes deployment
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git clone https://github.com/SimonGallien/portfolio-simon-k3s.git
+          cd portfolio-simon-k3s
+          sed -i 's|image: ghcr.io/SimonGallien/portfolio-simon:.*|image: ghcr.io/SimonGallien/portfolio-simon:latest|' deployments/deployment.yaml
+          git add deployments/deployment.yaml
+          git commit -m "Auto-update image to latest"
+          git push https://x-access-token:${{ secrets.GHCR_PAT }}@github.com/SimonGallien/portfolio-simon-k3s.git main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
