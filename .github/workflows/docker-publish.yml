@@ -1,55 +1,37 @@
 #
 name: Demo Push
 
-# This workflow runs when any of the following occur:
-# - A push is made to a branch called `main` or `seed`
-# - A tag starting with "v" is created
-# - A pull request is created or updated
 on:
   push:
     branches:
       - main
-      #- seed
     tags:
       - v*
   pull_request:
-  # This creates an environment variable called `IMAGE_NAME ` with the value `ghtoken_product_demo`.
-env:
-  IMAGE_NAME: my-image-name:$(date +%s)
-#
+
 jobs:
-  # This pushes the image to GitHub Packages.
   push:
     runs-on: ubuntu-latest
     permissions:
       packages: write
       contents: read
-      #
+
     steps:
       - uses: actions/checkout@v4
 
+      - name: Define Image Name
+        run: echo "IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/portfolio-simon:$(date +%s)" >> $GITHUB_ENV
+
       - name: Build image
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
+        run: docker build . --file Dockerfile --tag ${{ env.IMAGE_NAME }} --label "runnumber=${GITHUB_RUN_ID}"
 
       - name: Log in to registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-        #
+
       - name: Push image
         run: |
-          IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
-
-          # This changes all uppercase characters to lowercase.
-          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
-          # This strips the git ref prefix from the version.
-          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
-          # This strips the "v" prefix from the tag name.
-          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-          # This uses the Docker `latest` tag convention.
-          [ "$VERSION" == "main" ] && VERSION=latest
-          echo IMAGE_ID=$IMAGE_ID
-          echo VERSION=$VERSION
-          docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
-          docker push $IMAGE_ID:$VERSION
+          echo "Pushing image: ${{ env.IMAGE_NAME }}"
+          docker push ${{ env.IMAGE_NAME }}
 
       - name: Update Kubernetes deployment
         run: |
@@ -57,10 +39,9 @@ jobs:
           git config --global user.name "GitHub Actions"
           git clone https://github.com/SimonGallien/portfolio-simon-k3s.git
           cd portfolio-simon-k3s
-          sed -i 's|image: ghcr.io/SimonGallien/portfolio-simon:.*|image: ghcr.io/SimonGallien/portfolio-simon:latest|' deployments/deployment.yaml
+          sed -i 's|image: ghcr.io/SimonGallien/portfolio-simon:.*|image: ${{ env.IMAGE_NAME }}|' deployments/deployment.yaml
           git add deployments/deployment.yaml
           git commit -m "Auto-update image to latest"
           git push https://x-access-token:${{ secrets.GHCR_PAT }}@github.com/SimonGallien/portfolio-simon-k3s.git main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
