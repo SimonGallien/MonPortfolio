@@ -40,9 +40,14 @@ jobs:
           git config --global user.name "GitHub Actions"
           git clone https://github.com/SimonGallien/portfolio-simon-k3s.git
           cd portfolio-simon-k3s
-          sed -i 's|image: ghcr.io/SimonGallien/portfolio-simon:.*|image: ${{ env.IMAGE_NAME }}|' deployments/deployment.yaml
+          echo "Before update:"
+          cat deployments/deployment.yaml | grep "image: ghcr.io"
+          sed -i "s|image: ghcr.io/simongallien/portfolio-simon:.*|image: ${{ env.IMAGE_NAME }}|" deployments/deployment.yaml
+          echo "After update:"
+          cat deployments/deployment.yaml | grep "image: ghcr.io"
           git add deployments/deployment.yaml
-          git commit -m "Auto-update image to latest"
-          git push https://x-access-token:${{ secrets.GHCR_PAT }}@github.com/SimonGallien/portfolio-simon-k3s.git main
+          git commit -m "Auto-update image to latest" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GHCR_PAT }}@github.com/SimonGallien/portfolio-simon-k3s.git main || echo "No changes pushed"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
