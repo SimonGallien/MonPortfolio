@@ -44,7 +44,18 @@ jobs:
           git config --global user.name "GitHub Actions"
           git clone https://github.com/SimonGallien/portfolio-simon-k3s.git
           cd portfolio-simon-k3s
+          
+          echo "Before update:"
+          cat deployments/deployment.yaml | grep "image:"
+
+          # Forcer un changement même si l'image est déjà latest
           sed -i 's|image: ghcr.io/simongallien/portfolio-simon:.*|image: ghcr.io/simongallien/portfolio-simon:latest|' deployments/deployment.yaml
+          touch deployments/deployment.yaml
+
+          echo "After update:"
+          cat deployments/deployment.yaml | grep "image:"
+
           git add deployments/deployment.yaml
-          git commit -m "Auto-update image to latest" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GHCR_PAT }}@github.com/SimonGallien/portfolio-simon-k3s.git main || echo "No changes pushed"
+          git commit -m "Auto-update image to latest" --allow-empty
+          git push https://x-access-token:${{ secrets.GHCR_PAT }}@github.com/SimonGallien/portfolio-simon-k3s.git main
+  
